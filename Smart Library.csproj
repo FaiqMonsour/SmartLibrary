@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0BB0215F-AC66-4B24-BAB5-31197450AC99}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Smart_Library</RootNamespace>
+    <AssemblyName>Smart Library</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.Charts.WinForms, Version=1.1.0.0, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.Charts.WinForms.1.1.0\lib\net472\Guna.Charts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BRM_UPDAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BRM_UPDAT.Designer.cs">
+      <DependentUpon>BRM_UPDAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BRM_DADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BRM_DADD.Designer.cs">
+      <DependentUpon>BRM_DADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Borrow_Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrow_Book.Designer.cs">
+      <DependentUpon>Borrow_Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home_user.Designer.cs">
+      <DependentUpon>Home_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Read_Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Read_Book.Designer.cs">
+      <DependentUpon>Read_Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Issue_Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Issue_Book.Designer.cs">
+      <DependentUpon>Issue_Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Borrowing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Borrowing.Designer.cs">
+      <DependentUpon>View_Borrowing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebBrowser.Designer.cs">
+      <DependentUpon>WebBrowser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BRM_UPDAT.resx">
+      <DependentUpon>BRM_UPDAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BRM_DADD.resx">
+      <DependentUpon>BRM_DADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrow_Book.resx">
+      <DependentUpon>Borrow_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home_user.resx">
+      <DependentUpon>Home_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Read_Book.resx">
+      <DependentUpon>Read_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Issue_Book.resx">
+      <DependentUpon>Issue_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Borrowing.resx">
+      <DependentUpon>View_Borrowing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebBrowser.resx">
+      <DependentUpon>WebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2828%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2827%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ac164aa8ba53249522123d06bc3557fc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e9c99b1f0fa88ba72bfed488a1e3cba2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ea1362494ff192cac3cdf34c45901a18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\106600ae7ec21a96816d516a9b611cc6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a1a75f38a36f07e2830d07b6e6140e5d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\لقطة الشاشة 2025-05-21 181409.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\٢٠٢٣٠٧٢٧_٢١٥٢٤٨.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\صورة واتساب بتاريخ 1446-11-25 في 14.30.34_bc8ef210.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\تنزيل.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\تنزيل1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\تنزيل2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\صورة واتساب بتاريخ 1446-11-25 في 14.30.38_1f9d45f9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e9c99b1f0fa88ba72bfed488a1e3cba21.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
