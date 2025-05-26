@@ -30,7 +30,7 @@
         {
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtpassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtpassword = new Guna.UI2.WinForms.Guna2TextBox.UI2.WinForms.Guna2TextBox();
             this.login = new Guna.UI2.WinForms.Guna2Button();
             this.txtname = new Guna.UI2.WinForms.Guna2TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -202,12 +202,11 @@
             // 
             // Form1
             // 
-            this.AcceptButton = this.login;
+           // this.AcceptButton = this.login;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1349, 737);
-            this.Controls.Add(this.guna2CustomGradientPanel1);
-            this.Controls.Add(this.pictureBox1);
+//            this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
